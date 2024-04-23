@@ -2,6 +2,10 @@
   "name": "no-name",
   "license": "UNLICENSED",
   "type": "module",
+  "scripts": {
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
   "dependencies": {
     "@polymer/polymer": "3.5.1",
     "@vaadin/bundles": "24.4.0-alpha22",
@@ -34,6 +38,7 @@
     "@babel/preset-react": "7.24.1",
     "@rollup/plugin-replace": "5.0.5",
     "@rollup/pluginutils": "5.1.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/react": "18.2.75",
     "@types/react-dom": "18.2.24",
     "@vaadin/hilla-generator-cli": "24.4.0-alpha24",
@@ -48,6 +53,8 @@
     "@vitejs/plugin-react": "4.2.1",
     "async": "3.2.5",
     "glob": "10.3.12",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
     "rollup-plugin-brotli": "3.1.0",
     "rollup-plugin-visualizer": "5.12.0",
     "strip-css-comments": "5.0.0",
