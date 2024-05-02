@@ -3,3 +3,9 @@ declare module '*.css?inline' {
   const content: CSSResultGroup;
   export default content;
 }
+
+declare module 'csstype' {
+  interface Properties {
+    [index: `--${string}`]: any;
+  }
+}
